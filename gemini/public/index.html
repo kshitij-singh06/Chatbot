@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WellnessBot — AI Health & Wellness Companion</title>
+    <meta name="description" content="WellnessBot is your AI-powered health and wellness companion. Get tips on fitness, nutrition, mental health, sleep, and more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="chat-card">
+        <header class="chat-header">
+          <div class="header-brand">
+            <span class="header-icon">🌿</span>
+            <div>
+              <div class="title">WellnessBot</div>
+              <div class="subtitle">AI Health &amp; Wellness Companion</div>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button id="clearChatBtn" class="btn btn-secondary" type="button">Clear</button>
+          </div>
+        </header>
+
+        <main id="messages" class="messages" aria-live="polite"></main>
+
+        <footer class="composer">
+          <div class="input-wrap">
+            <textarea
+              id="messageInput"
+              class="input"
+              placeholder="Ask about health, nutrition, fitness..."
+              autocomplete="off"
+              rows="1"
+            ></textarea>
+            <button id="sendBtn" class="btn btn-primary" type="button">Send</button>
+          </div>
+          <div id="status" class="status" aria-live="polite"></div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

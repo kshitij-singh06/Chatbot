@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RuleBot | AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Sidebar / Info Sheet -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <h2>RuleBot</h2>
+        <span class="badge">Rule-Based</span>
+      </div>
+
+      <div class="sidebar-content">
+        <h3>What can I do?</h3>
+        <p>I am a simple rule-based AI built with Node.js. Try asking me about:</p>
+        
+        <ul class="capabilities-list">
+          <li onclick="useSuggestion('Hi!')"><i class="fa-solid fa-hand-wave"></i> Say Hello</li>
+          <li onclick="useSuggestion('What is Artificial Intelligence?')"><i class="fa-solid fa-brain"></i> Define AI / ML</li>
+          <li onclick="useSuggestion('Tell me a joke')"><i class="fa-solid fa-face-laugh-squint"></i> Jokes & Facts</li>
+          <li onclick="useSuggestion('Difference between rule-based and AI')"><i class="fa-solid fa-code-compare"></i> Rule-based vs AI</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <p>College Project &copy; 2026</p>
+      </div>
+    </aside>
+
+    <!-- Main Chat Screen -->
+    <main class="chat-container">
+      
+      <!-- Chat Header -->
+      <header class="chat-header">
+        <div class="header-info">
+          <h2>Chat Session</h2>
+          <p class="status">
+            <span class="dot"></span> Online and ready
+          </p>
+        </div>
+        <button id="clear-chat" title="Clear Chat">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </header>
+
+      <!-- Messages Area -->
+      <div class="messages-container" id="messages-container">
+        
+        <!-- Welcome Message -->
+        <div class="message bot-message slide-in">
+          <div class="avatar bot-avatar">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="message-content">
+            <p>Hello! I'm RuleBot, your friendly assistant. How can I help you today?</p>
+            <span class="timestamp">Just now</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Input Area -->
+      <footer class="chat-footer">
+        <form id="chat-form" class="input-area">
+          <textarea 
+            id="message-input" 
+            placeholder="Type your message here..." 
+            rows="1" 
+            autofocus
+            autocomplete="off"
+          ></textarea>
+          <button type="submit" id="send-button" disabled>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
