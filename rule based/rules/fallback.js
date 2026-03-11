@@ -1,10 +1,6 @@
-/**
- * Fallback Rule
- * Catch-all when no other rules match.
- */
 module.exports = [
   {
-    patterns: [/.*/], // Matches anything
+    patterns: [/.*/], 
     responses: [
       "I'm not quite sure I understand. Could you rephrase that?",
       "Sorry, I don't have a rule for that yet! Could you ask something else?",

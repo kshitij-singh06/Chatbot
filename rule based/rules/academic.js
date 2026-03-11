@@ -1,6 +1,5 @@
-/**
- * Academic / Knowledge Rules
- */
+//Academic / Knowledge Rules 
+
 module.exports = [
   // Artificial Intelligence
   {

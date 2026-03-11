@@ -1,6 +1,3 @@
-/**
- * Small Talk Rules
- */
 module.exports = [
   {
     patterns: [/tell me a joke/, /joke/, /make me laugh/, /something funny/],

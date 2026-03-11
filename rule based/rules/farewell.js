@@ -1,6 +1,3 @@
-/**
- * Farewell Rules
- */
 module.exports = [
   {
     patterns: [

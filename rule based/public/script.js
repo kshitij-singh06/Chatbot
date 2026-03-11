@@ -181,7 +181,6 @@ function showTypingIndicator() {
   return wrapperDiv;
 }
 
-// Scroll to Bottom
 function scrollToBottom() {
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }

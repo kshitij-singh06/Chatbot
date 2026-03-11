@@ -1,6 +1,3 @@
-/**
- * Help / FAQ Rules
- */
 module.exports = [
   {
     patterns: [/^help$/, /what can you do/, /what do you do/, /your features/],

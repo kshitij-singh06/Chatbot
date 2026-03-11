@@ -1,6 +1,3 @@
-/**
- * Greeting Rules
- */
 module.exports = [
   {
     patterns: [
